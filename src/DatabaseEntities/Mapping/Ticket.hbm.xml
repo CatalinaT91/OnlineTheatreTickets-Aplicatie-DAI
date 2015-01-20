@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" schema="dbo" namespace="DatabaseEntities" assembly="DatabaseEntities">
+  <class name="Ticket" table="Tickets" dynamic-insert="true" lazy="false">
+
+    <!-- PRIMARY KEY -->
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <!-- ************ -->
+
+    <!-- PROPERTIES -->
+    <property name="TicketsNo">
+      <column name="tickets_number"/>
+    </property>
+
+    <!--FOREIGN KEYS-->
+    <many-to-one name="Customer">
+      <column name="customer_id"/>
+    </many-to-one>
+    <many-to-one name="Event">
+      <column name="event_id"/>
+    </many-to-one>
+    <!-- ************ -->
+
+  </class>
+</hibernate-mapping>

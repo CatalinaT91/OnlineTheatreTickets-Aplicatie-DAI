@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" schema="dbo" namespace="DatabaseEntities" assembly="DatabaseEntities">
+  <class name="Review" table="Reviews" dynamic-insert="true" lazy="false">
+
+    <!-- PRIMARY KEY -->
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <!-- ************ -->
+
+    <!-- PROPERTIES -->
+    <property name="ReviewMark">
+      <column name="review_mark"/>
+    </property>
+    <property name="ReviewText">
+      <column name="review_text"/>
+    </property>
+
+    <!--FOREIGN KEYS-->
+    <many-to-one name="Play">
+      <column name="play_id"/>
+    </many-to-one>
+    <many-to-one name="Customer">
+      <column name="customer_id"/>
+    </many-to-one>
+    <!-- ************ -->
+
+  </class>
+</hibernate-mapping>

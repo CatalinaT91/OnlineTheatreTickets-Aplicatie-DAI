@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" schema="dbo" namespace="DatabaseEntities" assembly="DatabaseEntities">
+  <class name="Play" table="Plays" dynamic-insert="true" lazy="false">
+
+    <!-- PRIMARY KEY -->
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <!-- ************ -->
+
+    <!-- PROPERTIES -->
+    <property name="Name">
+      <column name="name"/>
+    </property>
+    <property name="Duration">
+      <column name="duration"/>
+    </property>
+    <property name="IsActive">
+      <column name="is_active"/>
+    </property>
+    <property name="About">
+      <column name="about"/>
+    </property>
+    <!--FOREIGN KEYS-->
+    <many-to-one name="Author">
+      <column name="author_id"/>
+    </many-to-one>
+    <many-to-one name="Director">
+      <column name="director_id"/>
+    </many-to-one>
+    <many-to-one name="Image">
+      <column name="image_id"/>
+    </many-to-one>
+    <!-- ************ -->
+
+    <!-- INVERSE FOREIGN KEYS -->
+    <set name="Actings" inverse="true" cascade="all" lazy="false">
+      <key column="actor_id"/>
+      <one-to-many class="Acting"/>
+    </set>
+   
+    <set name="Events" inverse="true" cascade="all" lazy="false">
+      <key column="play_id"/>
+      <one-to-many class="Event"/>
+    </set>
+    <!-- ************ -->
+
+  </class>
+</hibernate-mapping>

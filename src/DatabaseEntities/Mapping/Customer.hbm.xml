@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" schema="dbo" namespace="DatabaseEntities" assembly="DatabaseEntities">
+  <class name="Customer" table="Customers" dynamic-insert="true" lazy="false">
+
+    <!-- PRIMARY KEY -->
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <!-- ************ -->
+
+    <!-- PROPERTIES -->
+    <property name="FirstName">
+      <column name="first_name"/>
+    </property>
+    <property name="LastName">
+      <column name="last_name"/>
+    </property>
+    <property name="Username">
+      <column name="username"/>
+    </property>
+    <property name="Password">
+      <column name="password"/>
+    </property>
+    <property name="Address">
+      <column name="address"/>
+    </property>
+    <property name="PhoneNo">
+      <column name="phone_number"/>
+    </property>
+
+    <!-- INVERSE FOREIGN KEYS -->
+    <set name="Reviews" inverse="true" cascade="all">
+      <key column="customer_id"/>
+      <one-to-many class="Review"/>
+    </set>
+    <set name="Tickets" inverse="true" cascade="all">
+      <key column="customer_id"/>
+      <one-to-many class="Ticket"/>
+    </set>
+    <!-- ************ -->
+
+  </class>
+</hibernate-mapping>

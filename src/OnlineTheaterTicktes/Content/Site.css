@@ -1,0 +1,865 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.contact_left {
+    float: left;
+    width: 50%;
+}
+
+.contact_right {
+    float: left;
+    width: 50%;
+}
+
+.content_principal {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+#map {
+    width: 500px;
+    height: 300px;
+}
+
+#bus_image {
+    width: 30px;
+    height: 30px;
+}
+
+#subway_image {
+    width: 30px;
+    height: 30px;
+}
+
+.theatre_pictures_left {
+    float: left;
+    width: 50%;
+}
+
+.theatre_pictures_right {
+    float: right;
+    width: 50%;
+}
+
+#tnb1 {
+    width: 90%;
+    height: 300px;
+}
+
+#tnb2 {
+    width: 90%;
+    height: 300px;
+}
+
+.mainLeft {
+    float: left;
+    width: 42%;
+}
+
+.mainLeftUp {
+    height: 50%;
+    display: block;
+    positon: relative;
+    margin-top: 1cm;
+    background-color: #F5F5F5;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px 0 4px 0;
+}
+
+#MainContent_ddSelectPlay {
+    width: 175px;
+}
+
+.mainLeftUpinner {
+    margin-left: 20px;
+}
+
+    .mainLeftUpinner select, .mainLeftUpinner input {
+        height: 25px;
+    }
+
+.classBuyTickets {
+    padding-left: 200px;
+}
+
+.mainLeftDown table th, .mainLeftDown table td {
+}
+
+.mainLeftUpinner span {
+    width: 110px;
+    display: inline-block;
+}
+
+.leftPoster {
+    height: 380px;
+    width: 520px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#imgPoster1 {
+    height: 100%;
+    width: 45%;
+}
+
+#imgPoster2 {
+    height: 100%;
+    width: 45%;
+    margin-left: 20px;
+}
+
+.classCalendarRight {
+    line-height:22px;
+    padding:10px;
+    float: left;
+    border: 1px solid #bbb;
+    width: 285px;
+    margin-left: 5px;
+    height: 196px;
+}
+
+#lblPlaysFromDate {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mainLeftDown {
+    padding-top: 10px;
+    margin-top: 1cm;
+}
+
+.classCalendar {
+    width: 200px;
+    display: block;
+    float: left;
+}
+
+#lblPlaysFromDate {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.classSelectPlay {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#ddSelectPlay {
+    width: 200px;
+}
+
+.classSelectDate {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#txtSelectPlayDate {
+    width: 200px;
+}
+
+.classSelectTicketsNo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.classBuyTickets {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#btnBuyTickets {
+    padding-left: 200px;
+}
+
+
+.mainRight {
+    float: right;
+    width: 58%;
+}
+
+.mainContent {
+    background-color: #F5F5F5;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px 0 4px 0;
+    padding: 10px 7px 5px;
+    margin-top: 1cm;
+    margin-left: 20px;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+.contentTitle {
+    margin: 10px 0px 15px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contentInfo {
+    width: 430px;
+    float: right;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contentPlayDate {
+    padding: 0px 7px 5px;
+    float: left;
+    width: 30%;
+    clear:both;
+}
+
+.content-right-plays {
+    float: right;
+    width: 70%;
+    clear: right;
+}
+
+.contentPlayDayOfWeek1 {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.contentPlayCompleteDate1 {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.contentInfo1 {
+    float: right;
+    width: 70%;
+    height: 100px;
+}
+
+.contentPlayImg {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+    .contentPlayImg img {
+        width: 100px;
+        height: 100px;
+    }
+
+.contentPlayDetails {
+    float: left;
+    width: 320px;
+    margin-left: 5px;
+}
+
+.contentPlayTitle {
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.vote {padding:10px 40px 0px;
+}
+.vote table td {
+        padding:0px 5px;
+    }
+.vote table input {
+        margin-right:4px;
+    }
+.vote table label { font-size:12px;
+    }
+.vote table { float:left;
+    }
+.rating img {width:40px;
+             margin-top:-5px;
+             margin-left:4px;
+}
+.rating {
+    position: absolute;
+top: 159px;
+right: 36px;
+width: 100px;
+font-size: 30px;
+}
+#MainContent_btnRate {float:left; margin-left:20px;
+font-weight: bold;
+width: 83px;
+color: #fff;
+background: green;
+box-shadow: none;
+border: 1px solid;
+border-radius: 20px;
+}
+.contentPlayAuthor {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.contentPlayDetails {
+    height: 100px;
+}
+.contentPlayImg img {border:1px solid #ccc;
+                     border-radius:60px;
+}
+.contentPlayImgSeparator {
+    margin-top: 5px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contentInfo2 {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.contentPlayImg2 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#imgPlay2 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPlayTitle2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 120px;
+}
+
+.contentPlayAuthor2 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.contentPlayImgSeparator2 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.contentPlayDate2 {
+    padding: 10px 7px 5px;
+    float: left;
+    width: 30%;
+    margin-top: 120px;
+}
+
+.contentPlayDayOfWeek2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.contentPlayCompleteDate2 {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.contentInfo3 {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.contentPlayImg3 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#imgPlay3 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPlayTitle3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 120px;
+}
+
+.contentPlayAuthor3 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.contentPlayImgSeparator3 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator3 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contentInfo4 {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.contentPlayImg4 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#imgPlay4 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPlayTitle4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 120px;
+}
+
+.contentPlayAuthor4 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.contentPlayImgSeparator4 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator4 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.contentPlayDate3 {
+    padding: 10px 7px 5px;
+    float: left;
+    width: 30%;
+    margin-top: 120px;
+}
+
+.contentPlayDayOfWeek3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.contentPlayCompleteDate3 {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.contentInfo5 {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.contentPlayImg5 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#imgPlay5 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPlayTitle5 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 120px;
+}
+
+.contentPlayAuthor5 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.contentPlayImgSeparator5 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator5 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contentInfo6 {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.contentPlayImg6 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#imgPlay6 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPlayTitle6 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 120px;
+}
+
+.contentPlayAuthor6 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.contentPlayImgSeparator6 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 90%;
+    height: 10px;
+}
+
+#imgPlaySeparator6 {
+    width: 100%;
+    height: 100%;
+}
+
+#imgRepertoirePlay1 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay2 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay3 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay4 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay5 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay6 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay7 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#imgRepertoirePlay8 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.theatresTitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block;
+}
+
+.theatreBallroomName1 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: block;
+}
+
+.theatreBallroom1 {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 150px;
+}
+
+.theatresBallroomDescription1 {
+    float: left;
+    width: 70%;
+    display: block;
+}
+
+#lblTheatresBallroomDescription1 {
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+
+.theatreBallroomImage1 {
+    float: right;
+    width: 30%;
+    display: block;
+    width: 150px;
+}
+
+#imgTheatreBallroom1 {
+    width: 90%;
+    height: 90%;
+}
+
+.theatreBallroomImgSeparator1 {
+    margin-left: 40px;
+    width: 90%;
+    height: 10px;
+    display: block;
+}
+
+#imgTheatreBallroomImgSeparator1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#imgSeats1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 800px;
+}
+
+
+.play {
+    margin-top: 40px;
+}
+
+.playImage {
+    width: 480px;
+    height: 640px;
+    margin-top: 40px;
+    float: left;
+    display: block;
+}
+footer {display:block; clear:both; text-align:center;
+}
+#imgPlayDetails1 {
+    width: 460PX;
+    height: 640px;
+}
+.playBuy {
+    position:absolute;
+    top:20px;
+    right:40px;
+}
+
+.playInfo {
+    position:relative;
+    width: 685px;
+    margin-top: 40px;
+    float: right;
+    display: block;
+    -webkit-box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);
+    -moz-box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);
+    box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);
+}
+
+.playTitle {
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.playAuthor {
+    padding-bottom: 10px;
+border-bottom: 1px solid #ccc;
+width: 88%;
+    margin-top: -3px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.playPrice .price {
+    color:red;
+}
+.playScript {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+.new_comment_box {position:relative;
+}
+.playcommentsbox {padding:10px;
+                  border:1px solid #bbb;
+                  background:#f5f5f5;
+                  margin-bottom:10px;
+}
+#MainContent_new_comment_button {position:absolute;
+                                 top:38px; right:10px;
+                                 border: 1px solid #bbb;
+border-radius: 10px;
+color: gray;
+width: 90px;
+}
+#MainContent_new_comment_button:hover {
+    background:white;color:black;
+    }
+
+#MainContent_btnBuyPlayTickets{
+    font-weight: bold;
+width: 120px;
+color: white;
+background: #00adf2;
+box-shadow: none;
+border: 1px solid;
+border-radius: 20px;
+height: 35px;
+}
+#MainContent_btnBuyTickets { font-weight: bold;
+width: 120px;
+color: white;
+background: #00adf2;
+box-shadow: none;
+border: 1px solid;
+border-radius: 20px;
+height: 35px;
+}
+.linkclass { color: #00adf2; font-weight:bold;
+}
+.linkclass:hover { color: #00adf2; font-weight:bold;text-decoration:underline;
+}
+#MainContent_new_comment_body {
+    width: 100%;
+    resize: none; 
+    height: 75px;
+}
+.playComment {display:block;
+              width:85%;
+              margin:10px auto;
+}
+#new_comment_body {
+}
+#new_comment_button {
+}
+.playScenography {
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.playTranslator {
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.playPrice {
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.play {position:relative;
+}
+
+
+.playDescription {
+    margin: 20px auto;
+    width: 85%;
+    padding:10px;
+    background-color: #F5F5F5;
+    border: 1px solid #BBBBBB;
+    font-size: 12px;
+  /*  -webkit-box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);
+    -moz-box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);
+    box-shadow: 5px 6px 19px 0px rgba(50, 50, 50, 0.42);*/
+}
+
+#View1 {
+    margin-top: 100px;
+    background-color: aliceblue;
+}
